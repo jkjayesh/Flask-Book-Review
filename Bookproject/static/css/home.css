@@ -1,0 +1,111 @@
+/* C:\Flask\Book Review Project\static\img */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/static/img/background_img.jpg'); /* Replace 'path/to/your/image.jpg' with the path to your image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+  }
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y)* -1);
+    margin-right: calc(var(--bs-gutter-x)* -.5);
+    margin-left: calc(var(--bs-gutter-x)* -.5);
+}
+.container{
+    /* border: 1px solid black; */
+    width: 20%;
+    height: 180%;
+    /* text-align: center; */
+    margin: 20px 7px 18px 50px;
+}
+.style-script-regular {
+    font-family: "Style Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+#heading{
+    text-align: center;
+    font-size: 10rem;
+    font-family: "Style Script", cursive;
+}
+.content{
+    border: 1px solid black;
+    background: #21252991;
+}
+#search-container {
+    border: 1px solid black;
+    height: 33px;
+    margin: auto;
+    width: 33rem;
+    text-align: center;
+    display: flex;
+    border-radius: 14px;
+}
+
+.heading1{
+    text-align: left;
+    margin-left: 2px;
+    color: white;
+}
+.text{
+    font-size: 17px;
+    padding-left: 73px;
+}
+
+.books{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#main{
+    margin: 31px 0px 34px 0px;
+}
+
+.navbar{
+    background: #21252991;
+}
+
+.nav-link{
+    font-size: 22px;
+    color: white;
+    margin-left: 15px;
+}
+.nav-link:hover{
+    color: gray;
+}
+
+.dropdown-menu{
+    background: #21252991;
+}
+
+.dropdown-item{
+    color: white;
+}
+.image{
+        border: 1px solid black;
+        width: 100%; /* Set the width of the image to fill the box */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Remove default image spacing */
+        cursor: pointer;
+}
+.image:hover{
+
+}
+
+.subimage{
+    width: 146px;
+    position: relative;
+    left: 153px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.modal-body {
+    max-height: 400px; /* Adjust the maximum height as needed */
+    overflow-y: auto; /* Enable vertical scrollbar */
+  }
+  

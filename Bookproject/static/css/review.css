@@ -1,0 +1,11 @@
+body{
+    /* background: rgb(148 199 243 / 44%); */
+}
+
+.photo{
+    border: 1px solid black;
+        width: 20%; /* Set the width of the image to fill the box */
+        height: 30%; /* Maintain aspect ratio */
+        display: block; /* Remove default image spacing */
+        cursor: pointer;
+}

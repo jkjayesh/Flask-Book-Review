@@ -1,0 +1,27 @@
+body{
+    /* background: rgb(148 199 243 / 44%); */
+}
+
+.photo{
+    border: 1px solid black;
+    width: 14%;
+    height: 33%;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.review-text{
+    justify-content: center;
+    display: flex;
+    font-size: 15px;
+}
+
+.name-text{
+
+}
+
+.r-text{
+
+}

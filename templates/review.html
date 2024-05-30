@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/review.css') }}">
+</head>
+
+<body>
+  <!-- <img src="/static/img/book1.jpg" class="photo" alt=""> -->
+  <img class="photo" src="{{ url_for('static', filename='img/' + review.img_file) }}" alt="Book Image">  
+  <hr>
+  <h1 class="review-text">BOOK:-{{book.book_name}}</h1>
+  <h1 class="review-text">AUTHOR:-{{book.author}}</h1>
+  <h1 class="review-text">GENRE:-{{book.genre}}</h1>
+  <hr>
+
+  <h2>Reviews</h2>
+    <ul>
+        {% for review in reviews %}
+            <li>{{ review.name }} -  {{ review.review }}</li>
+        {% endfor %}
+    </ul>
+ 
+
+  <h2>Add Review</h2>
+    <form action="/review_page/{{ review.slug }}/add_review" method="post">
+        <!-- <label for="content">Review Content:</label><br> -->
+        <!-- <textarea id="content" name="name" rows="4" cols="50"></textarea><br> -->
+        <input name="name" type="text" class="form-control" placeholder="name"><br>
+        <br>
+        <textarea id="content" name="review" rows="4" cols="50" placeholder="your review" ></textarea><br>
+        <!-- <input type="number" id="rating" name="review" min="1" max="5"><br> -->
+        <input type="submit" value="Submit Review">
+    </form>
+</body>
+
+</html>
